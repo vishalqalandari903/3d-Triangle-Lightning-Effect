@@ -1,0 +1,150 @@
+/* rgb(255, 17, 0) */
+
+body {
+    background-color: rgb(3, 3, 26);
+}
+.pyramid1 {
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    left: 0;
+    transform-style: preserve-3d;
+    position: absolute;
+    margin: 100px 500px;
+    animation: 5s rotate3d linear infinite;
+    transform: rotateY(0deg) rotateX(-30deg);
+}
+.pyramid1 div {
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    
+}
+.pyramid1 span {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #00ec00, black);
+    filter: blur(5px);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(0px);
+    transform-origin: top;
+}
+@keyframes rotate3d {
+    0% {
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg); 
+    }
+}
+.pyramid1 .glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00ec00;
+    transform: rotateX(87deg) translateZ(-140px) translateY(10px);
+    filter: blur(20px);
+    box-shadow: 10px 20px 80px #00ec00;
+}
+
+.pyramid2 {
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    left: -400px;
+    transform-style: preserve-3d;
+    position: absolute;
+    margin: 100px 500px;
+    animation: 5s rotate3d linear infinite;
+    transform: rotateY(0deg) rotateX(-30deg);
+}
+.pyramid2 div {
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    
+}
+.pyramid2 span {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #ec0000, black);
+    filter: blur(5px);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(0px);
+    transform-origin: top;
+}
+.pyramid2 .glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ec0000;
+    transform: rotateX(87deg) translateZ(-140px) translateY(10px);
+    filter: blur(20px);
+    box-shadow: 10px 20px 80px #ec0000;
+}
+
+.pyramid3 {
+    height: 200px;
+    width: 200px;
+    top: 200px;
+    left: 400px;
+    transform-style: preserve-3d;
+    position: absolute;
+    margin: 100px 500px;
+    animation: 5s rotate3d linear infinite;
+    transform: rotateY(0deg) rotateX(-30deg);
+}
+.pyramid3 div {
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    
+}
+.pyramid3 span {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, #ec00e0, black);
+    filter: blur(5px);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(0px);
+    transform-origin: top;
+}
+.pyramid3 .glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ec00e0;
+    transform: rotateX(87deg) translateZ(-140px) translateY(10px);
+    filter: blur(20px);
+    box-shadow: 10px 20px 80px #ec00e0;
+}
